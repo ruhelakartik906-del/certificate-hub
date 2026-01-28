@@ -105,10 +105,6 @@ const Footer = () => {
                   <span>Sydney, NSW, Australia</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <Phone className="w-4 h-4" />
-                  <span>+61 2 1234 5678</span>
-                </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
                   <Mail className="w-4 h-4" />
                   <span>info@ascii.edu.au</span>
                 </div>
