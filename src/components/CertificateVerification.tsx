@@ -30,6 +30,45 @@ const demoData: Record<string, CertificateData> = {
     certificateType: "Temporary Certificate",
     issueDate: "2 September 2025",
     expiryDate: "6 February 2026"
+  },
+  "ECC7531246890": {
+    name: "Sarah Mitchell",
+    certificateNumber: "ECC7531246890",
+    course: "Certified Network Defender (CND)",
+    attendance: "92%",
+    duration: "6 Months (June 2025 - December 2025)",
+    practicalStatus: "Completed",
+    theoryStatus: "Completed",
+    projectsStatus: "Completed",
+    certificateType: "Permanent Certificate",
+    issueDate: "15 December 2025",
+    expiryDate: "15 December 2028"
+  },
+  "ECC6429183756": {
+    name: "James Cooper",
+    certificateNumber: "ECC6429183756",
+    course: "Computer Hacking Forensics (CHFI)",
+    attendance: "75%",
+    duration: "8 Months (March 2025 - November 2025)",
+    practicalStatus: "Completed",
+    theoryStatus: "Completed",
+    projectsStatus: "In Progress",
+    certificateType: "Temporary Certificate",
+    issueDate: "10 November 2025",
+    expiryDate: "10 May 2026"
+  },
+  "ECC9847562130": {
+    name: "Emily Watson",
+    certificateNumber: "ECC9847562130",
+    course: "Certified Ethical Hacker (CEH)",
+    attendance: "95%",
+    duration: "1 Year (January 2025 - January 2026)",
+    practicalStatus: "Completed",
+    theoryStatus: "Completed",
+    projectsStatus: "Completed",
+    certificateType: "Permanent Certificate",
+    issueDate: "20 January 2026",
+    expiryDate: "20 January 2029"
   }
 };
 
