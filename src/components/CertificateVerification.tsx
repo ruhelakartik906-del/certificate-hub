@@ -156,7 +156,7 @@ const CertificateVerification = () => {
           <div className="flex gap-2">
             <Input
               type="text"
-              placeholder="Certificate Number (e.g., ECC8492589642)"
+              placeholder="Certificate Number (e.g., ECC0000000000)"
               value={certificateNumber}
               onChange={(e) => setCertificateNumber(e.target.value)}
               className="flex-1"
