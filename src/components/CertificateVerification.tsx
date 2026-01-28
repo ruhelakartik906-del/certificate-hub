@@ -43,7 +43,7 @@ const demoData: Record<string, CertificateData> = {
     projectsCount: "5 Projects",
     methodsLearned: ["Penetration Testing", "Network Security", "Vulnerability Assessment", "Social Engineering", "Malware Analysis"],
     eventsAttended: ["CTF Competition 2025", "Security Workshop", "Live Hacking Demo"],
-    certificateType: "Temporary Certificate",
+    certificateType: "Permanent Certificate",
     issueDate: "2 September 2025",
     expiryDate: "6 February 2026",
     permanentIssueDate: "24 January 2026",
