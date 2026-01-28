@@ -21,6 +21,7 @@ interface CertificateData {
   certificateType: string;
   issueDate: string;
   expiryDate: string;
+  permanentIssueDate?: string;
   examScore: string;
   accreditation: string;
   instructor: string;
@@ -45,6 +46,7 @@ const demoData: Record<string, CertificateData> = {
     certificateType: "Temporary Certificate",
     issueDate: "2 September 2025",
     expiryDate: "6 February 2026",
+    permanentIssueDate: "24 January 2026",
     examScore: "85%",
     accreditation: "ANSI Accredited #0732 ISO/IEC 17024",
     instructor: "Sanjay Bavisi, President"
@@ -209,7 +211,7 @@ const CertificateVerification = () => {
               {/* Details Grid */}
               <div className="p-4 space-y-4">
                 {/* Dates & Duration */}
-                <div className="grid grid-cols-3 gap-4 text-sm">
+                <div className={`grid ${searchResult.permanentIssueDate ? 'grid-cols-4' : 'grid-cols-3'} gap-4 text-sm`}>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-muted-foreground" />
                     <div>
@@ -231,6 +233,15 @@ const CertificateVerification = () => {
                       <p className="text-foreground text-xs">{searchResult.expiryDate}</p>
                     </div>
                   </div>
+                  {searchResult.permanentIssueDate && (
+                    <div className="flex items-center gap-2">
+                      <Award className="w-4 h-4 text-primary" />
+                      <div>
+                        <p className="text-muted-foreground text-xs">Permanent Issue Date</p>
+                        <p className="text-primary text-xs font-semibold">{searchResult.permanentIssueDate}</p>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Progress Stats */}
