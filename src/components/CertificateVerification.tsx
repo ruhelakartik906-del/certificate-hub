@@ -294,6 +294,23 @@ const CertificateVerification = () => {
                     ))}
                   </div>
                 </div>
+
+                {/* Important Notices */}
+                <div className="pt-4 border-t border-border">
+                  <p className="text-xs text-muted-foreground mb-3 font-semibold">⚠️ Important Notices</p>
+                  <div className="space-y-2">
+                    <div className="bg-amber-500/10 border border-amber-500/30 rounded p-3">
+                      <p className="text-xs text-amber-700 dark:text-amber-400">
+                        <strong>Demo Period Certificate:</strong> This certificate is initially issued to students for the demo/training period. Permanent certificates are issued after successful completion of all requirements and verification.
+                      </p>
+                    </div>
+                    <div className="bg-destructive/10 border border-destructive/30 rounded p-3">
+                      <p className="text-xs text-destructive">
+                        <strong>Legal Disclaimer:</strong> If the certificate holder engages in any illegal or unethical activities using the skills learned, ASCII Institute and EC-Council hold no responsibility. The individual will be solely liable for their actions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
